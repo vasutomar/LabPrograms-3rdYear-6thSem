@@ -1,0 +1,3 @@
+create table Timings( id integer not null, arrival time, departure time, foreign key(id) res TrainDetails(id) on delete cascade) engine = innodb;
+
+create table TrainDetails( id integer(10) not null primary key, name varchar(20), source varchar(3), destination varchar(3));
